@@ -1,0 +1,48 @@
+<!DOCtypein html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <input placeholder="Enter Your Equation" id="input" disabled type="">
+        <div id="buttons">
+            <div class="row" id="row1">
+                <button class="clear_btn" onclick="clearinput()">C</button>
+                <button class="backspace_btn" onclick="backspace()">←</button>
+                <button class="number_btn" onclick="alert('Page designed and developed by pascall de creator')">?</button>
+                <button class="sign_btn" onclick="typein('/100')">%</button>
+            </div>
+            <div class="row" id="row2">
+                <button class="number_btn" onclick="typein(7)">7</button>
+                <button class="number_btn" onclick="typein(8)">8</button>
+                <button class="number_btn" onclick="typein(9)">9</button>
+                <button class="sign_btn" onclick="typein('*')">x</button>
+            </div> 
+            <div class="row" id="row3">
+                <button class="number_btn" onclick="typein(4)">4</button>
+                <button class="number_btn" onclick="typein(5)">5</button>
+                <button class="number_btn" onclick="typein(6)">6</button>
+                <button class="sign_btn" onclick="typein('-')">-</button>
+            </div>
+            <div class="row" id="row4">
+                <button class="number_btn" onclick="typein(1)">1</button> 
+                <button class="number_btn" onclick="typein(2)">2</button>
+                <button class="number_btn" onclick="typein(3)">3</button>
+                <button class="sign_btn" onclick="typein('+')">+</button>
+            </div>
+            <div class="row" id="row5">
+                <button class="number_btn" onclick="typein(0)">0</button>
+                <button class="number_btn" onclick="typein('.')">.</button>
+                <button class="sign_btn" onclick="typein('/')">÷</button>
+                <button class="sign_btn" onclick="solve()">=</button>
+            </div>
+        </div>
+        <script src="scripts/script.js"></script>
+    </div>
+</body>
+</html>
